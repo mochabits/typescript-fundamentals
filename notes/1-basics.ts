@@ -78,11 +78,11 @@
 /**
  * (11) object types can be expressed using {} and property names
  */
-// let cc: { houseNumber: number; streetName: string };
-// cc = {
-//   streetName: "Fake Street",
-//   houseNumber: 123
-// };
+ let cc: { houseNumber: number; streetName: string };
+ cc = {
+   streetName: "Fake Street",
+  houseNumber: 123
+ };
 
 // cc = {
 //   houseNumber: 33
@@ -117,15 +117,15 @@
  * Sometimes we have a type that can be one of several things
  */
 
-// export interface HasPhoneNumber {
-//   name: string;
-//   phone: number;
-// }
+export interface HasPhoneNumber {
+  name: string;
+  phone: number;
+}
 
-// export interface HasEmail {
-//   name: string;
-//   email: string;
-// }
+export interface HasEmail {
+  name: string;
+  email: string;
+}
 
 // let contactInfo: HasEmail | HasPhoneNumber =
 //   Math.random() > 0.5
